@@ -1,3 +1,5 @@
+# Enable backtrack algorithm below to solve this board
+
 board = [
     [5,3,0,0,7,0,0,0,0],
     [6,0,0,1,9,5,0,0,0],
@@ -35,8 +37,6 @@ def print_board(m):
         row_to_print += '|'
         print(row_to_print)
     print(line)
-
-print_board(board)
 
 # checks if placing the value in [row,col] is valid in the board
 def is_valid(board, row, col, value):
